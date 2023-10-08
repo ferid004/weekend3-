@@ -64,3 +64,45 @@
 
 // section_search end
 
+
+// container_light_house
+
+.container_light_house{
+    min-height: 100vh;
+    // background-image:  url('https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg.webp');
+    img{
+      position: relative;
+      filter: brightness(50%); 
+      height: 110vh;
+    }
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .word{
+      position: absolute;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto  200px;
+      gap: 20px;
+      
+      p{
+        font-size: 20px;
+      }
+      h1{
+        font-size: 60px;
+      }
+    }
+    
+}
+
+// container_light_house end
+
+
+
+// container_card
+// container_card end
+
