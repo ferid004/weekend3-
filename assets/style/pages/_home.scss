@@ -57,7 +57,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    background-color: blue;
+    background-color: #1F4172;
+    color: white;
   }
 }
 // section_search end
@@ -181,7 +182,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    background-color: blue;
+    background-color: #8EACCD;
     margin: auto 300px;
     margin-bottom: 50px;
     min-height: 250px;
@@ -265,7 +266,7 @@
 
 // container_explore
 .container_explore{
-  background-color: rgb(201, 199, 199);
+  background-color: #D2E0FB;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -407,7 +408,7 @@
   display: flex;
   justify-content: center;
   .left{
-    background-color: blue;
+    background-color: #1F4172;
     .container{
       margin: 60px 80px;
       color: white;
@@ -420,21 +421,101 @@
         margin-bottom: 40px;
       }
       form{
-        background-color:blue;
+        background: transparent;
+      }
+      hr{
+        width: 500px;
       }
       input[type=text] {
-        width: 300px;
+        width: 500px;
         height: 45px;
         font-size: 16px;
-        border: solid 1px;
-        border-radius: 5px;}
-        Input::placeholder{
-          background-color:blue ;
-          
+        border: none;
+        color: white;
+        
+        background: transparent;
+      }
+        input::placeholder{
+          color: white;
           }
+      
+        .btn{
+          margin-top: 30px;
+          width: 120px;
+          height: 45px;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          background-color: #6499E9;
+        }
+      
+    }
+  }
+  .raight{
+    img{
+      min-height: 100%;
     }
   }
   
   
 }
 // subscribe end
+
+
+
+// footer end
+footer{
+  height: 70vh;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 20px;
+  align-items: center;
+  .konato{
+    max-width: 270px;
+    p{
+      margin: 40px 0;
+      font-size: 16px;
+    }
+    .footer-social{
+      display: flex;
+      
+      gap : 10px;
+    }
+  }
+  .footer_raight{
+    display: flex;
+    gap: 70px;
+    h4{
+      font-size: 25px;
+      margin: 40px 0;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+// footer end
+
+
+
+// click_up
+.up{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color:#6499E9;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+// click_up end
