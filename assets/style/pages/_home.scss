@@ -36,17 +36,18 @@
   }
 
   .dropdown-content a {
+    z-index: 2;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover { z-index: 2;background-color: #ddd;}
 
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {z-index: 2;display: block;}
 
-  .dropdown:hover .dropbtn {background-color: #e4e4e4;}
+  .dropdown:hover .dropbtn {z-index: 2;background-color: #e4e4e4;}
 
 
   .btn{
@@ -168,6 +169,7 @@
 // contanier_how_we 
 .contanier_how_we{
   background-image: url('https://preview.colorlib.com/theme/konato/assets/img/gallery/section-bg1.jpg.webp');
+  background-repeat: no-repeat;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -175,7 +177,8 @@
   align-items: center;
   h2{
     font-size: 40px;
-    margin: 100px 0;
+    margin-top: 40px;
+    margin-bottom: 50px ;
     color: white;
   }
   .big_box{
@@ -183,15 +186,21 @@
     justify-content: center;
     color: white;
     background-color: #8EACCD;
-    margin: auto 300px;
+    margin: auto 200px;
     margin-bottom: 50px;
-    min-height: 250px;
+    min-height: 300px;
     .box{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      
+      h4{
+        font-size: 25px;
+      }
+      p{
+        text-align: center;
+        margin: 0 30px;
+      }
     }
     
   }
@@ -489,6 +498,9 @@ footer{
   .footer_raight{
     display: flex;
     gap: 70px;
+    .footer_red{
+      color: red;
+    }
     h4{
       font-size: 25px;
       margin: 40px 0;

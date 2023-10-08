@@ -65,13 +65,13 @@ nav .contanier_nav .navraight .btn:hover {
   width: 120px;
   height: 40px;
   display: flex;
-  color: aquamarine;
+  color: #6499E9;
   text-align: center;
   align-items: center;
   justify-content: center;
   border: 3px solid;
   border-radius: 10px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .search {
@@ -106,18 +106,22 @@ nav .contanier_nav .navraight .btn:hover {
   min-width: 100px;
 }
 .search .dropdown-content a {
+  z-index: 2;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 .search .dropdown-content a:hover {
+  z-index: 2;
   background-color: #ddd;
 }
 .search .dropdown:hover .dropdown-content {
+  z-index: 2;
   display: block;
 }
 .search .dropdown:hover .dropbtn {
+  z-index: 2;
   background-color: #e4e4e4;
 }
 .search .btn {
@@ -218,6 +222,7 @@ nav .contanier_nav .navraight .btn:hover {
 
 .contanier_how_we {
   background-image: url("https://preview.colorlib.com/theme/konato/assets/img/gallery/section-bg1.jpg.webp");
+  background-repeat: no-repeat;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -225,7 +230,8 @@ nav .contanier_nav .navraight .btn:hover {
 }
 .contanier_how_we h2 {
   font-size: 40px;
-  margin: 100px 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
   color: white;
 }
 .contanier_how_we .big_box {
@@ -233,15 +239,22 @@ nav .contanier_nav .navraight .btn:hover {
   justify-content: center;
   color: white;
   background-color: #8EACCD;
-  margin: auto 300px;
+  margin: auto 200px;
   margin-bottom: 50px;
-  min-height: 250px;
+  min-height: 300px;
 }
 .contanier_how_we .big_box .box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.contanier_how_we .big_box .box h4 {
+  font-size: 25px;
+}
+.contanier_how_we .big_box .box p {
+  text-align: center;
+  margin: 0 30px;
 }
 
 .card_2 {
@@ -497,6 +510,9 @@ footer .konato .footer-social {
 footer .footer_raight {
   display: flex;
   gap: 70px;
+}
+footer .footer_raight .footer_red {
+  color: red;
 }
 footer .footer_raight h4 {
   font-size: 25px;
