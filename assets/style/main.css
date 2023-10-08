@@ -4,4 +4,13 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  font: inherit;
 }/*# sourceMappingURL=main.css.map */
